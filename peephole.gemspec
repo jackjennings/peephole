@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Jack Jennings"]
   s.email       = ["jack@remote.gd"]
   s.homepage    = "https://github.com/jackjennings/peephole"
-  s.summary     = "Simple Rails route contraints for multitenancy"
-  s.description = "Simple Rails route contraints for multitenancy"
+  s.summary     = "Simple Rails route constraints for multi-tenancy"
+  s.description = "Simple Rails route constraints for multi-tenancy"
   s.license     = "MIT"
 
   s.files = Dir["{lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
