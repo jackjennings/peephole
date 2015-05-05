@@ -25,4 +25,17 @@ class NavigationTest < ActionDispatch::IntegrationTest
     end
   end
 
+  test "should allow access to unit route without subdomain" do
+    host! "someurl.com"
+    get "/units"
+    assert_response :success
+  end
+
+  test "should deny access to unit route with subdomain" do
+    assert_raises ActionController::RoutingError do
+      host! "tenant.someurl.com"
+      get "/units"
+    end
+  end
+
 end

@@ -17,6 +17,11 @@ Rails.application.routes.draw do
     root to: 'buyers#show', as: :tenant_root
   end
 
+  without_tenant do
+    # News Posts resource will only be shown without a subdomain
+    resources :news_posts
+  end
+
   # Units will be accessible everywhere
   resources :units
 

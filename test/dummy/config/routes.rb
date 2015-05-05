@@ -5,5 +5,9 @@ Rails.application.routes.draw do
     resource :buyer, only: :show
   end
 
+  without_tenant do
+    resources :units
+  end
+
   root to: 'units#index'
 end
