@@ -7,14 +7,14 @@ require "peephole/version"
 Gem::Specification.new do |s|
   s.name        = "peephole"
   s.version     = Peephole::VERSION
-  s.authors     = [""]
+  s.authors     = ["Jack Jennings"]
   s.email       = ["jack@remote.gd"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Peephole."
-  s.description = "TODO: Description of Peephole."
+  s.homepage    = "https://github.com/jackjennings/peephole"
+  s.summary     = "Simple Rails route contraints for multitenancy"
+  s.description = "Simple Rails route contraints for multitenancy"
   s.license     = "MIT"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.2.1"
