@@ -9,7 +9,7 @@ The `for_tenant` method is available inside of the Rails routing block. All rout
 ```ruby
 Rails.application.routes.draw do
 
-  for_tenant do
+  with_tenant do
     # Buyer resource will only be available on subdomains
     resource :buyer, only: :show
 
