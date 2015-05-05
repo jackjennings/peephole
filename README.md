@@ -4,7 +4,7 @@ Adds a simple helper for Rails routing, scoped to the existence of any subdomain
 
 ## Usage
 
-The `for_tenant` method is available inside of the Rails routing block. All routes declared inside of the `for_tenant` block will only be accessible when accessing the application through a subdomain.
+The `with_tenant`/`without_tenant` methods are available inside of the Rails routing block. All routes declared inside of the `with_tenant` block will only be accessible when accessing the application through a subdomain, while `without_tenant` performs the inverse operation.
 
 ```ruby
 Rails.application.routes.draw do
